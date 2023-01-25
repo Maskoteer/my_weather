@@ -1,0 +1,15 @@
+#city_auto_complete-label {
+  color: white !important;
+}
+
+#city_auto_complete {
+  color: white;
+}
+
+fieldset {
+  border-color: white !important;
+}
+
+path {
+  fill: white;
+}

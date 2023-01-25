@@ -1,0 +1,21 @@
+.weatherSwiper {
+  padding: 50px 30px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+}
+
+.no_data_image {
+  height: 300px;
+}
+
+.no_data_title {
+  color: white;
+}
+
+.no_data_container {
+  margin: 50px 0;
+  text-align: center;
+}

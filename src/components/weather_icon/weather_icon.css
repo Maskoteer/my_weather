@@ -1,0 +1,5 @@
+.weather_icon {
+  width: 150px;
+  height: 100%;
+  object-fit: contain;
+}

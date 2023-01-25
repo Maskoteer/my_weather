@@ -1,0 +1,38 @@
+.error_boundary_container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error_illustration {
+  width: 400px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.error_title {
+  font-size: 26px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.error_subtitle {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.refresh_page {
+  border: none;
+  height: 40px;
+  width: 120px;
+  border-radius: 3px;
+  background: #ee6c4e;
+  color: white;
+  cursor: pointer;
+}
+
+.error_data {
+  text-align: center;
+}

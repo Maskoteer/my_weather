@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import "./home.css";
 import Search from "../../components/search";
 import UnitSelect from "../../components/unit_select";
 import WeatherChart from "../../components/weather_chart";

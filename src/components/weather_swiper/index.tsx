@@ -53,8 +53,8 @@ export default function WeatherSwiper() {
     );
   return (
     <Swiper
-      slidesPerView={3}
-      spaceBetween={30}
+      // slidesPerView={3}
+      // spaceBetween={30}
       navigation={true}
       modules={[Navigation]}
       breakpoints={breakpoints}
@@ -66,12 +66,28 @@ export default function WeatherSwiper() {
 }
 
 const breakpoints = {
-  640: {
+  300: {
+    slidesPerView: 1,
+    spaceBetween: 20,
+  },
+  450: {
+    slidesPerView: 1.5,
+    spaceBetween: 20,
+  },
+  525: {
+    slidesPerView: 1.8,
+    spaceBetween: 20,
+  },
+  600: {
     slidesPerView: 2,
     spaceBetween: 20,
   },
-  768: {
-    slidesPerView: 3,
+  680: {
+    slidesPerView: 2.2,
+    spaceBetween: 20,
+  },
+  850: {
+    slidesPerView: 2.5,
     spaceBetween: 40,
   },
   1024: {

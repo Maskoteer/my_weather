@@ -1,7 +1,5 @@
 # My Weather App
 
-## Available Scripts
-
 In the project directory, you can run:
 
 1. Install dependencied
@@ -18,7 +16,6 @@ npm i
 npm start
 ```
 
-\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\

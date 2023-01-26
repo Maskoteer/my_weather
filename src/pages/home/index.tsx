@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./home.css";
 import Search from "../../components/search";
 import UnitSelect from "../../components/unit_select";

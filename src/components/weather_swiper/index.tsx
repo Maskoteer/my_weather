@@ -7,15 +7,16 @@ import WeatherCard from "../weather_card";
 import { IWeather, IWeatherItem } from "../../models";
 import { handle_observe_forecast } from "../../redux/handlers";
 import { extract_data } from "../../utils";
+import WeatherCardSkeleton from "../weather_card_skeleton";
 export default function WeatherSwiper() {
   const [weather, setWeather] = useState<IWeather>();
   const [unit, setUnit] = useState("metric");
-  const [dataFetched, setDataFetched] = useState(false);
+  const [isDataFetched, setIsDataFetched] = useState(false);
   useEffect(() => {
     const unsubscribe = handle_observe_forecast((_weather: IWeather, unit) => {
       setWeather(extract_data(_weather));
       setUnit(unit);
-      setDataFetched(true);
+      setIsDataFetched(true);
     });
 
     return () => {
@@ -36,9 +37,20 @@ export default function WeatherSwiper() {
       );
     });
   };
+  const render_skeletons = () => {
+    return [1, 2, 3].map((elem) => (
+      <SwiperSlide
+        key={elem}
+        className="swiper_slide_elem"
+        role="swiper_slide_elem"
+      >
+        <WeatherCardSkeleton />
+      </SwiperSlide>
+    ));
+  };
 
   if (
-    dataFetched &&
+    isDataFetched &&
     (!weather || !Array.isArray(weather?.list) || weather.list?.length === 0)
   )
     return (
@@ -60,7 +72,7 @@ export default function WeatherSwiper() {
       breakpoints={breakpoints}
       className="weatherSwiper"
     >
-      {render_cards()}
+      {isDataFetched ? render_cards() : render_skeletons()}
     </Swiper>
   );
 }

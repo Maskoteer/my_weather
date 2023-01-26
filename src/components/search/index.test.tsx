@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import Search from "../index";
+import Search from "./index";
 
 describe("Search", () => {
   it("should render search component", () => {

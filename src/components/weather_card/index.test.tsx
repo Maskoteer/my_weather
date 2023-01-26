@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import WeatherCard from "..";
-import { IWeatherItem } from "../../../models";
+import WeatherCard from ".";
+import { IWeatherItem } from "../../models";
 
 describe("Weather Card", () => {
   it("should render WeatherCard component with correct text and units (metric)", () => {

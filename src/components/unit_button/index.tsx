@@ -21,7 +21,7 @@ export default function UnitButton({
   };
   return (
     <button
-      className={`unit_button ${selected == index ? "selected" : ""}`}
+      className={`unit_button ${selected === index ? "selected" : ""}`}
       onClick={() => handle_select()}
       role="unit_button"
     >

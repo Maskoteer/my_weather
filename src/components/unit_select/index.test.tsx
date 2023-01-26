@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import UnitSelect from "../index";
+import UnitSelect from "./index";
 
 describe("Unit Select", () => {
   it("should render unit_select component", () => {

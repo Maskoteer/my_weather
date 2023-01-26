@@ -1,8 +1,8 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import UnitButton from "../index";
-import { Units } from "../../../constants";
-import { handle_get_unit } from "../../../redux/handlers";
+import UnitButton from "./index";
+import { Units } from "../../constants";
+import { handle_get_unit } from "../../redux/handlers";
 
 describe("Unit Button", () => {
   it("should render unit_button component", () => {
